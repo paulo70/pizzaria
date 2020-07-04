@@ -1,0 +1,25 @@
+.footer{
+  background: #2c6e03;
+
+  width: 100%;
+  min-height: 60px;
+  flex-shrink: 0;
+  position: absolute;
+  bottom: 0;
+
+  &-contacts{
+    font-size: 0.875em;
+    list-style: none;
+    justify-content: center;
+
+    display: flex;
+    margin: 0 0.313em;
+    padding: 1.250em;
+
+    li{
+      color: #fff;
+      font-weight: bold;
+      margin: 0 10px;
+    }
+  }
+}

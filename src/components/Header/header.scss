@@ -1,5 +1,5 @@
 .header{
-  background: #270b5d;
+  background: #2c6e03;
 
   padding: 0.938em;
   display: flex;
@@ -7,6 +7,7 @@
   width: 100%;
   &-title{
     font-family: 'Montserrat', sans-serif;
-    color: blue;
+    font-weight: bold;
+    color: #fff;
   }
 }
