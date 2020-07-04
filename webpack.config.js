@@ -18,6 +18,12 @@ module.exports = {
     contentBase: './public'
   },
 
+  resolve: {
+    alias: {
+      modules: __dirname + '/node_modules'
+    }
+  },
+
   optimization: {
     minimizer: [
       new UglifyJsPlugin({
