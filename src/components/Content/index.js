@@ -2,6 +2,8 @@ import React from 'react'
 
 import './content.scss'
 
+import Alert from '../Alert'
+
 function Text(){
   return(
     <div className='content'>
