@@ -2,15 +2,16 @@ import React from 'react'
 
 import './content.scss'
 
-import Alert from '../Alert'
+import Information from '../Information'
+import Form from '../Form'
 
-function Text(){
+function Content (){
   return(
     <div className='content'>
-      <p>Monte sua pizza da maneira que desejar, siga os passos a seguir:</p>
-      <p>Primeiro escolha a massa, em seguida o tamanho e por último o recheio.</p>
+      <Information />
+      <Form />
     </div>
   )
 }
 
-export default Text
+export default Content

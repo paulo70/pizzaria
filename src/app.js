@@ -3,7 +3,7 @@ import 'modules/bootstrap/dist/css/bootstrap.min.css'
 
 import './app.scss'
 
-import Text from './components/Content'
+import Content from './components/Content'
 
 function App(props){
   return (
@@ -11,7 +11,7 @@ function App(props){
       <div className='row'>
         <div className='col-sm-12'>
           <h1 className='welcome-title'>{props.welcome}</h1>
-          <Text />
+          <Content />
         </div>
       </div>
     </div>

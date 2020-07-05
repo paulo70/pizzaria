@@ -8,7 +8,7 @@ import Footer from './components/Footer'
 ReactDOM.render(
   <>
     <Header title='Pizzaria Peppe In Grani'/>
-    <App welcome='Seja Bem-Vindo a Peppe In Grani'/>
+    <App welcome='Seja Bem-Vindo a Peppe In Grani Pizzaria'/>
     <Footer />
   </>,
   document.getElementById('root'))
