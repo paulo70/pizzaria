@@ -5,6 +5,8 @@ import Mass from '../Mass'
 import Size from '../Size'
 import Fill from '../Fill'
 
+import './form.scss'
+
 const steps = [
   { id: 'mass' },
   { id: 'size' },
