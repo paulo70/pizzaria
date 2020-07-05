@@ -21,22 +21,22 @@ function Fill ({ navigation }){
 
       <Form.Row>
         <Col sm='1'>
-          <button
+          <Button
             variant='success'
             onClick={previous}
             className='common-form-button'
             >
             Anterior
-          </button>
+          </Button>
         </Col>
-        <Col sm='2'>
-          <button
+        <Col sm='3'>
+          <Button
             variant='success'
             onClick={next}
             className='common-form-button'
             >
-            Resumo do pedido
-          </button>
+            Fechar o pedido
+          </Button>
         </Col>
       </Form.Row>
     </Form>
