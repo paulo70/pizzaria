@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import { Button, Form, Spinner, Col } from 'react-bootstrap'
 
-import Options from './options'
-
 function Fill ({ navigation }){
 
   const { previous, next }  = navigation
@@ -23,7 +21,6 @@ function Fill ({ navigation }){
             value = { value }
             onChange = { handleValue}
             >
-            <Options />
           </Form.Control>
         </Col>
       </Form.Row>
