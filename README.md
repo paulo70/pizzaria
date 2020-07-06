@@ -2,7 +2,7 @@
 
 # In order to clone this projet you need have node install in your machine.
 
-#After tha,t you should make git clone https://github.com/paulo70/pizzaria.git
+#After that you should make git clone https://github.com/paulo70/pizzaria.git
 
 # You should to navigate until backend folder and run npm install, after that run the comand node index.js.
 
