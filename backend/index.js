@@ -72,14 +72,17 @@ const fill = [
   }
 ]
 
-const recomend = [
-  {
-    id:1,
-    name: 'Pizza da casa',
-    isrecomend: true,
-    points: 20
-  }
-]
+const recomend = {
+  id:1,
+  name: 'Pizza da casa, experimente e ganhe pontos para próxima a compra',
+  ingredients: 'molho da casa, calabresa, cebola, azeitona, rúcula',
+  size: 'Tamanho tradicional',
+  recomend: true,
+  points: 20,
+  img: 'http://www.pizzeriamammaconcetta.com.br/img/galerias/fotos-do-cardapio/img021.jpg',
+  warning: 'Dica do dia'
+}
+
 
 app.get('/mass', (req, res) => {
   res.json(dough)
@@ -94,7 +97,7 @@ app.get('/fill', (req, res) => {
 })
 
 app.get('/recomend', (req, res) => {
-  resp.json(recomend)
+  res.json(recomend)
 })
 
 app.listen(port, ()=> console.log(`Start Server at at ${port}`))
