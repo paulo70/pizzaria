@@ -56,7 +56,7 @@ function Fill ({ navigation }){
             onClick   = { next }
             className ='common-form-button'
             >
-            Avançar
+            Fechar pedido
           </Button>
         </Col>
       </Form.Row>
