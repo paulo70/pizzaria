@@ -61,7 +61,7 @@ function Size({ navigation }){
             onClick ={ next }
             className='common-form-button'
             >
-            Próximo
+            Avançar
           </Button>
         </Col>
       </Form.Row>

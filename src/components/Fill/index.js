@@ -26,7 +26,7 @@ function Fill ({ navigation }){
       <h1 className='common-form-title'>Escolher o recheio</h1>
 
       <Form.Row>
-        <Col sm='4'>
+        <Col sm='3'>
           <Form.Control
             as        ='select'
             value     = { value }
@@ -56,7 +56,7 @@ function Fill ({ navigation }){
             onClick   = { next }
             className ='common-form-button'
             >
-            Fechar o pedido
+            Avançar
           </Button>
         </Col>
       </Form.Row>

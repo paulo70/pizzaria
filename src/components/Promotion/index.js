@@ -23,7 +23,7 @@ function Promotion(props) {
 
     setTimeout(() => {
       setShowAlert(false)
-    },3000)
+    },2000)
   }
 
   return (

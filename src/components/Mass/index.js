@@ -45,7 +45,7 @@ function Mass ({ navigation }){
           variant = 'success'
           className='common-form-button'
           >
-          Próximo
+          Avançar
         </Button>
       </Form>
     </Col>
