@@ -1,20 +1,29 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Button, Form, Spinner, Col } from 'react-bootstrap'
+
+import Options from './options'
 
 function Fill ({ navigation }){
 
-  const { previous, next } = navigation
+  const { previous, next }  = navigation
+  const [ value, setValue ] = useState('catupiry')
+
+  function handleValue(event){
+    setValue(event.target.value)
+  }
 
   return (
     <Form noValidate className='common-form'>
-      <h1 className='common-form-title'>Fill</h1>
+      <h1 className='common-form-title'>Escolher o recheio</h1>
 
       <Form.Row>
-        <Col sm='3'>
+        <Col sm='4'>
           <Form.Control
             as='select'
-            value = 'Cogumelos e brocólis'
+            value = { value }
+            onChange = { handleValue}
             >
+            <Options />
           </Form.Control>
         </Col>
       </Form.Row>
