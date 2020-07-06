@@ -1,14 +1,22 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import {Button,Form, Spinner, Col } from 'react-bootstrap'
+import axios from 'axios'
 
 function Mass ({ navigation }){
+  const URL = 'http://localhost:3001/mass'
 
   const { next } = navigation
-  const [value, setValue] = useState('caseira')
+  const [ value, setValue ] = useState('')
+  const [ data , setData  ] = useState([])
 
   function handleValue (event){
     setValue(event.target.value)
   }
+
+  useEffect(() => {
+    axios.get(URL)
+      .then(resp => setData(resp.data))
+  },[])
 
   return (
     <Form noValidate className='common-form'>
@@ -19,7 +27,11 @@ function Mass ({ navigation }){
             as ='select'
             value = { value }
             onChange = { handleValue }
+            data = { data }
             >
+            {data.map((item, index) => (
+              <option key = {index} value = {item.mass}>{item.description_mass}</option>
+            ))}
           </Form.Control>
         </Col>
       </Form.Row>

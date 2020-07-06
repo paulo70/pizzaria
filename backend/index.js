@@ -53,18 +53,22 @@ const fill = [
   {
     id: 1,
     fill: 'catupiry',
-    description_fill: 'Recheio de catupiry com bacon',
+    description_fill: 'Recheio de catupiry com bacon'
   },
   {
     id: 2,
     fill: 'calabresa',
-    description_fill: 'Recheio de calabresa com cebola',
+    description_fill: 'Recheio de calabresa com cebola'
   },
-
   {
     id: 3,
     fill: 'peperoni',
-    description_fill: 'Recheio de peperoni',
+    description_fill: 'Recheio de peperoni'
+  },
+  {
+    id: 4,
+    fill: 'portuguesa',
+    description_fill: 'Recheio de portuguesa'
   }
 ]
 
@@ -72,7 +76,7 @@ const recomend = [
   {
     id:1,
     name: 'Pizza da casa',
-    isrecomend: true.
+    isrecomend: true,
     points: 20
   }
 ]
